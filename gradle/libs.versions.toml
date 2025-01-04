@@ -1,5 +1,25 @@
 [versions]
+allaymc-kts-host = "0.0.1-alpha"
+allaymc-server = "0.1.2"
+
+kotlin = "2.1.0"
+gradleup-shadow = "8.3.0"
+
+kotlinx-coroutines = "1.10.1"
 
 [libraries]
+allaymc-server = { group = "org.allaymc.allay", name = "server", version.ref = "allaymc-server" }
+
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+
+kotlin-scripting-common = { module = "org.jetbrains.kotlin:kotlin-scripting-common", version.ref = "kotlin" }
+kotlin-scripting-jvm = { module = "org.jetbrains.kotlin:kotlin-scripting-jvm", version.ref = "kotlin" }
+kotlin-scripting-jvm-host = { module = "org.jetbrains.kotlin:kotlin-scripting-jvm-host", version.ref = "kotlin" }
+kotlin-scripting-dependencies = { module = "org.jetbrains.kotlin:kotlin-scripting-dependencies", version.ref = "kotlin" }
+kotlin-scripting-dependencies-maven = { module = "org.jetbrains.kotlin:kotlin-scripting-dependencies-maven", version.ref = "kotlin" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
 
 [plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+gradleup-shadow = { id = "com.gradleup.shadow", version.ref = "gradleup-shadow" }
