@@ -5,3 +5,4 @@ plugins {
 }
 
 version = libs.versions.allaymc.kts.host.get()
+subprojects { version = rootProject.version }
